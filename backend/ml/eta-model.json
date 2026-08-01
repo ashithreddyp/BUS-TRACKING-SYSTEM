@@ -1,0 +1,142 @@
+{
+  "version": 3,
+  "trainedAt": "2026-04-17T12:03:27.036Z",
+  "samples": 29004,
+  "inputGroups": {
+    "eta": [
+      "distance_remaining_km",
+      "current_speed_kmph",
+      "time_of_day",
+      "day_of_week",
+      "historical_avg_delay_min",
+      "active_incidents_count",
+      "peak_hour_flag"
+    ],
+    "delay": [
+      "time_of_day",
+      "day_of_week",
+      "historical_delay_mean",
+      "historical_delay_std",
+      "incident_severity_score",
+      "weather_flag"
+    ],
+    "peak": [
+      "hour_of_day",
+      "average_delay_minutes",
+      "bus_density",
+      "incident_frequency"
+    ],
+    "all": [
+      "distance_remaining_km",
+      "current_speed_kmph",
+      "time_of_day",
+      "day_of_week",
+      "historical_avg_delay_min",
+      "active_incidents_count",
+      "peak_hour_flag",
+      "historical_delay_mean",
+      "historical_delay_std",
+      "incident_severity_score",
+      "weather_flag",
+      "hour_of_day",
+      "average_delay_minutes",
+      "bus_density",
+      "incident_frequency"
+    ]
+  },
+  "outputNames": [
+    "predicted_eta_minutes",
+    "predicted_delay_minutes",
+    "cluster_id",
+    "mapped_label"
+  ],
+  "featureMeans": {
+    "distance_remaining_km": 2.9865765307200034,
+    "current_speed_kmph": 49.03973861010678,
+    "time_of_day": 15.141118466418424,
+    "day_of_week": 4.628465039304923,
+    "historical_avg_delay_min": 0.0018684023068156147,
+    "active_incidents_count": 0,
+    "peak_hour_flag": 0.7157288649841401,
+    "historical_delay_mean": 0.0018684023068156147,
+    "historical_delay_std": 0.001585016200968574,
+    "incident_severity_score": 0,
+    "weather_flag": 0,
+    "hour_of_day": 15.141118466418424,
+    "average_delay_minutes": 0.0018684023068156132,
+    "bus_density": 30,
+    "incident_frequency": 0
+  },
+  "etaModel": {
+    "bias": null,
+    "weights": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "featureNames": [
+      "distance_remaining_km",
+      "current_speed_kmph",
+      "time_of_day",
+      "day_of_week",
+      "historical_avg_delay_min",
+      "active_incidents_count",
+      "peak_hour_flag"
+    ],
+    "targetName": "predicted_eta_minutes"
+  },
+  "delayModel": {
+    "bias": 0.000040310069778158626,
+    "weights": [
+      -0.0001337828650387909,
+      0.0008253401548785417,
+      0.0011946902118069739,
+      0.0006291508198198329,
+      0,
+      0
+    ],
+    "featureNames": [
+      "time_of_day",
+      "day_of_week",
+      "historical_delay_mean",
+      "historical_delay_std",
+      "incident_severity_score",
+      "weather_flag"
+    ],
+    "targetName": "predicted_delay_minutes"
+  },
+  "peakModel": {
+    "featureNames": [
+      "hour_of_day",
+      "average_delay_minutes",
+      "bus_density",
+      "incident_frequency"
+    ],
+    "centroids": [
+      [
+        14.654318608796185,
+        0.0026104889689715326,
+        30,
+        0
+      ],
+      [
+        16.366767738023043,
+        4.28738642863129e-17,
+        30,
+        0
+      ]
+    ],
+    "clusterLabelMap": {
+      "0": "peak",
+      "1": "non-peak"
+    },
+    "clusterSizes": {
+      "0": 20759,
+      "1": 8245
+    }
+  }
+}
