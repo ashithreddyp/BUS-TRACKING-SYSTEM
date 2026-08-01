@@ -1,0 +1,19 @@
+# Node dependencies
+node_modules/
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# Build files
+build/
+dist/
+
+# Windows files
+Thumbs.db
+
+# Temporary screenshots
+frame_*.png
+tmp_frame_test.png
