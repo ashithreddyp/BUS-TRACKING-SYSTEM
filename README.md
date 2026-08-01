@@ -1,4 +1,5 @@
 # BUS-TRACKING-SYSTEM
+<<<<<<< HEAD
 
 Project layout is intentionally split into:
 
@@ -29,3 +30,6 @@ Project layout is intentionally split into:
 ## Planning Docs
 
 - `docs/COLLEGE_PROJECT_CHECKLIST.md`: submission checklist, roadmap, pre-demo test plan, and future scope
+=======
+Real-Time Bus Tracking &amp; Transit Simulation Platform with ML ETA Prediction Node.js, Express.js, React, MongoDB, Socket.IO, Leaflet, ML
+>>>>>>> b135f15c34e2324ac8e51e6a21b5292f721c3857
