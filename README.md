@@ -1,35 +1,97 @@
 # BUS-TRACKING-SYSTEM
-<<<<<<< HEAD
 
-Project layout is intentionally split into:
+A real-time bus tracking and transit simulation platform with ML-based ETA prediction.
 
-- `backend/` for API, simulation, ML, models, and persistence
-- `frontend/` for React UI and map dashboard
+## Overview
 
-## Backend Structure
+The Bus Tracking System is designed to simulate and monitor public transportation using GPS simulation, route management, live tracking, and estimated arrival time prediction.
 
-- `backend/server.js`: API server and integration wiring
-- `backend/models/`: Mongoose schemas (`Bus`, `Stop`, `Route`, `Incident`, `SimulationLog`)
-- `backend/simulation/`: simulation engine (`gpsSimulator.js`)
-- `backend/ml/`: ETA model and external-data enrichment
-- `backend/services/`: shared backend domain helpers
+## Technologies Used
 
-## Frontend Structure
+* **Backend:** Node.js, Express.js
+* **Frontend:** React.js
+* **Database:** MongoDB
+* **Real-time Communication:** Socket.IO
+* **Maps:** Leaflet
+* **Machine Learning:** ETA prediction model
 
-- `frontend/src/App.js`: top-level app coordinator
-- `frontend/src/pages/`: dashboard pages and passenger views
-- `frontend/src/components/map/`: map-only UI components/icons
-- `frontend/src/utils/`: frontend utility helpers
+## Project Structure
 
-## Notes
+```
+BUS-TRACKING-SYSTEM/
+│
+├── backend/
+│   ├── server.js              # API server and integration
+│   ├── models/                # Database schemas
+│   ├── simulation/            # GPS simulation engine
+│   ├── ml/                    # ETA prediction logic
+│   └── services/              # Backend utilities
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/        # UI and map components
+│   │   ├── pages/             # Application pages
+│   │   └── utils/             # Helper functions
+│
+└── docs/                      # Project documentation
+```
 
-- Keep API and simulation logic inside `backend/`.
-- Keep UI and map rendering logic inside `frontend/`.
-- Do not place model/schema files outside `backend/models/`.
+## Features
 
-## Planning Docs
+* Real-time bus location tracking
+* GPS simulation
+* Interactive map dashboard
+* Route and stop management
+* Incident monitoring
+* ML-based ETA prediction
+* Passenger tracking interface
 
-- `docs/COLLEGE_PROJECT_CHECKLIST.md`: submission checklist, roadmap, pre-demo test plan, and future scope
-=======
-Real-Time Bus Tracking &amp; Transit Simulation Platform with ML ETA Prediction Node.js, Express.js, React, MongoDB, Socket.IO, Leaflet, ML
->>>>>>> b135f15c34e2324ac8e51e6a21b5292f721c3857
+## Installation
+
+### Backend
+
+```bash
+cd backend
+npm install
+```
+
+Start the backend server:
+
+```bash
+npm start
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+```
+
+Start the React application:
+
+```bash
+npm start
+```
+
+## Configuration
+
+Create a `.env` file in the backend directory and add required environment variables.
+
+Example:
+
+```
+MONGO_URI=your_database_connection
+PORT=5000
+```
+
+## Future Improvements
+
+* Mobile application support
+* Real GPS device integration
+* Advanced traffic prediction
+* Cloud deployment
+
+## License
+
+This project is developed for educational purposes.
