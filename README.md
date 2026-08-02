@@ -206,28 +206,6 @@ Start React application:
 npm start
 ```
 
----
-
-# 📸 Screenshots
-
-Add screenshots here:
-
-```
-screenshots/
-
-├── dashboard.png
-├── live-map.png
-└── tracking.png
-```
-
-Example:
-
-```md
-![Dashboard](screenshots/dashboard.png)
-```
-
----
-
 # 🔄 How It Works
 
 1. GPS simulator generates bus movement data.
