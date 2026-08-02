@@ -249,7 +249,6 @@ The application will be available in your browser after both frontend and backen
 **Ashith Reddy**
 
 * GitHub: https://github.com/ashithreddyp
-* LinkedIn: https://www.linkedin.com/in/ashith-reddy/
 
 ---
 
